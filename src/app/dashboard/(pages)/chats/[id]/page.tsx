@@ -2,8 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import EVALogo from "@/assets/logo/eva-logo.png";
-import EVALogoGif from "@/assets/logo/eva-logo.gif";
+import Logo from "@/assets/logo/bs-logo-blanco.png";
 import * as styles from "./styles";
 import { useChatsStore } from "@/app/chats/chats.store";
 import { EVAChatsAdapter } from "@/app/chats/infra/eva-chats.adapter";
@@ -129,7 +128,7 @@ export default function ChatContentById({ params }: any) {
       {/* Empty Chat */}
       {chatsState.chatSelected && !chatsState.chatSelected.messages.length && (
         <styles.EmptyChatMessageList>
-          <img src={EVALogoGif.src} alt="Login background image" />
+          <img src={Logo.src} alt="Login background image" />
           <h4>Soy Eva, soy la voz de tu negocio, siempre a tu lado.</h4>
           <p>¿Cómo podemos mejorar tu negocio el día de hoy?</p>
         </styles.EmptyChatMessageList>
@@ -137,7 +136,7 @@ export default function ChatContentById({ params }: any) {
 
       {thinking && (
         <styles.EvaThinking>
-          <img src={EVALogoGif.src} alt="Login background image" />
+          <img src={Logo.src} alt="Login background image" />
           <h4>Pensando...</h4>
         </styles.EvaThinking>
       )}
@@ -149,7 +148,7 @@ export default function ChatContentById({ params }: any) {
               {!message.isAuthors && (
                 <div className="message-header">
                   <span className="eva-logo-container">
-                    <Image src={EVALogo} alt={"eva-logo"} />
+                    <Image src={Logo} alt={"bs-logo"} />
                   </span>
                   <BubbleButton
                     $icon="play_circle"

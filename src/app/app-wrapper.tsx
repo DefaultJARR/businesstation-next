@@ -31,7 +31,7 @@ export default function AppWrapper({
   return (
     <>
       <head>
-        <title>{"Business " + pathname.split("/").join(" ")}</title>
+        <title>Business Station</title>
         <link rel="icon" href="../../assets/logo/icon512_rounded.ico" sizes="any" />
       </head>
       <body

@@ -35,7 +35,6 @@ export default function Sidebar() {
         </styles.SidebarHeader>
         <styles.SidebarBody $sidebar={sidebarState}>
           <SidebarItem text="Inicio" href="/dashboard" $icon="dashboard" />
-          <SidebarSeparator text="EVA In-House" color="white" />
           <SidebarGroup title="Chats" $icon="forum" startOpen={true}>
             <SidebarChatsList />
           </SidebarGroup>
@@ -44,7 +43,6 @@ export default function Sidebar() {
             href="/sales-campains"
             $icon="payments"
           />
-          <SidebarSeparator text="EVA Solve" color="white" />
           <SidebarItem text="Soporte" href="/support" $icon="support_agent" />
           <SidebarItem text="Consumo" href="/consume" $icon="paid" />
           <SidebarItem text="Usuarios" href="/users" $icon="group" />

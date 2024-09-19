@@ -20,6 +20,11 @@ export const VoiceInputBubble: React.FC<VoiceInputBubbleProps> = (props) => {
   const [isListening, setIsListening] = useState(false);
 
   const recognition = useMemo(() => {
+    if (typeof window !== "undefined" && !("speechSynthesis" in window)) {
+      alert("Sorry, your browser doesn't support speech synthesis.");
+      return;
+    }
+
     // Ensure SpeechRecognition is available in the browser
     const SpeechRecognition =
       window.SpeechRecognition || window.webkitSpeechRecognition;

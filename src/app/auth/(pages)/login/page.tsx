@@ -7,7 +7,7 @@ import { PasswordlessLogin } from './comp-passwordless-login/passwordless-login.
 
 // Restaurant configuration service required
 import LoginBGImage from '@/assets/img/background.png';
-import LoginBGRight from '@/assets/logo/eva-logo.gif';
+import LoginBGRight from '@/assets/logo/bs-logo-azul.png';
 import { useTheme } from 'styled-components';
 
 enum LoginMethods {
@@ -72,6 +72,7 @@ export default function LoginPage() {
         {/* Right Side */}
         <styles.RightSide color={theme.Primary.Color}>
           <img src={LoginBGRight.src} alt="Login background image" />
+          Business Station
         </styles.RightSide>
       </styles.LoginCard>
 

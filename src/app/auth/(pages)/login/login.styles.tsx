@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import Image from 'next/image';
-import { StyledBlankPage } from '@/layouts/blank-page.layout';
-import { EnumDeviceMediaQuery } from '@/responsive/device-size';
-import { StyledButtonBase } from '@/components/button-base.styles';
+import styled from "styled-components";
+import Image from "next/image";
+import { StyledBlankPage } from "@/layouts/blank-page.layout";
+import { EnumDeviceMediaQuery } from "@/responsive/device-size";
+import { StyledButtonBase } from "@/components/button-base.styles";
 
 export const StyledLoginPage = styled(StyledBlankPage)`
   @media ${EnumDeviceMediaQuery.MobileS} {
@@ -107,9 +107,17 @@ export const RightSide = styled.div<{ color: string }>`
 
   @media ${EnumDeviceMediaQuery.Tablet} {
     /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color: ${(props) => props.theme.Secondary.Color};
+    font-size: 2em;
+
     img {
-      width: 100%;
-      height: 100%;
+      width: 50%;
+      height: auto;
       display: block;
       background-repeat: no-repeat;
       background-size: cover;

@@ -13,11 +13,9 @@ const {
 } = EnumBaseColors;
 
 export const ThemePresets: Theme[] = [
-  new Theme('Eva', EvaBlue, Black, EvaDarkBlue, White, EvaLightBlue, Black, White),
+  new Theme('GreenBlue', EvaBlue, Black, EvaDarkBlue, White, EvaLightBlue, Black, White),
   new Theme('Dark', MediumGray, Black, DarkGray, White, DarkGray, Black, White),
   new Theme('Light', White, Black, EvaBlue, White, DarkGray, Black, EvaDarkBlue),
-  new Theme('Kaeky', "#8b95c9", Black, EvaBlue, White, EvaBlue, Black, Black),
-  new Theme('Kaeky2', "#ffa69e", Black, EvaBlue, White, "#ffa69e", Black, EvaDarkBlue),
 ];
 export const DEFAULT_THEME = ThemePresets[0];
 
